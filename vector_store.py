@@ -52,7 +52,7 @@ class LegalVectorStore:
         try:
             response = self.mistral_client.embeddings.create(
                 model="mistral-embed",
-                inputs=texts
+                input=texts
             )
             return [item.embedding for item in response.data]
         except Exception as e:
