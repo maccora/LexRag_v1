@@ -1,0 +1,12 @@
+# Core app
+streamlit>=1.38.0
+chromadb>=0.5.0
+
+# Embeddings and models
+mistralai>=1.0.0,<2.0.0
+sentence-transformers>=3.0.0
+torch>=2.1.0  # required by sentence-transformers
+
+# Data and utilities
+pandas>=2.0.0
+numpy>=1.26.0
