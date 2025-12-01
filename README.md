@@ -48,7 +48,8 @@ A Retrieval-Augmented Generation (RAG) system tailored for legal research, power
 
 ### Installation
 
-Dependencies are already configured in this Replit environment:
+Dependencies are already configured in my local environment, but should be able to be installed via pip:
+pip install -r requirements.txt
 - `mistralai` - Mistral AI SDK
 - `chromadb` - Vector database
 - `streamlit` - Web interface

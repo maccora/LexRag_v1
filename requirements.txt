@@ -10,3 +10,5 @@ torch>=2.1.0  # required by sentence-transformers
 # Data and utilities
 pandas>=2.0.0
 numpy>=1.26.0
+
+openai

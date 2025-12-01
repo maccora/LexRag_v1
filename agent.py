@@ -1,4 +1,6 @@
 from mistralai import Mistral
+# import openai
+#from openai  import OpenAI
 from typing import Dict, List, Optional, Tuple
 import os
 import json
@@ -13,6 +15,7 @@ class LegalResearchAgent:
     def __init__(self, rag_pipeline, mistral_api_key: Optional[str] = None):
         self.rag_pipeline = rag_pipeline
         self.mistral_api_key = mistral_api_key or os.getenv("MISTRAL_API_KEY")
+        self.openai_api_key = os.getenv("openai_api_key")
         
         if self.mistral_api_key:
             self.mistral_client = Mistral(api_key=self.mistral_api_key)
@@ -272,6 +275,7 @@ class CitationVerifier:
         Simple pattern matching for common citation formats.
         """
         import re
+
         
         patterns = [
             r'\d+\s+U\.S\.\s+\d+',
